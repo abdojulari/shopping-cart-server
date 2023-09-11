@@ -1,15 +1,25 @@
-import express, {Request, Response} from 'express';
-const app = express();
+import express, { Application, Request, Response, NextFunction} from 'express';
+import { connection } from './models/connection';
+import { sequelize } from './models/database';
+import { User } from './models/user.model';
+const app: Application = express();
 const port = 3000;
+connection();
 
 // middleware to parse json
 app.use(express.json());
-app.get('/', (req: Request, res: Response): any => {
+app.get('/', (req: Request, res: Response, next: NextFunction): any => {
     return res.send('Hello World!');
 });
 
-app.post('/api/post', (req, res) => {
-    console.log(req.body);
+app.post('/api/post', async (req, res) => {
+    await sequelize.sync();
+    const user = await User.create({ 
+        name: 'John Doe', 
+        email: 'john@doee.com', 
+        password: 'password' 
+    });
+    console.log(user.toJSON());
     return res.sendStatus(201);
 });
 
