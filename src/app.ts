@@ -1,7 +1,7 @@
 import express, { Application, Request, Response, NextFunction} from 'express';
-import { connection } from './models/connection';
-import { sequelize } from './models/database';
-import { User } from './models/user.model';
+import { connection } from '../databases/connection';
+import { sequelize } from '../databases/database';
+import { User } from '../models/user/user.model';
 const app: Application = express();
 const port = 3000;
 connection();
