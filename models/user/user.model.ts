@@ -1,5 +1,5 @@
 import { Model, DataTypes } from "sequelize";
-import { sequelize } from "./database";
+import { sequelize } from "../../databases/database";
 import * as bcrypt from 'bcrypt';
 /* create a new table called user with the following fields: 
 id, name, email, password, createdAt, updatedAt
@@ -24,7 +24,6 @@ User.init({
     updatedAt: DataTypes.DATE
 }, {
     sequelize,
-    modelName: 'user',
+    modelName: 'users',
     timestamps: true
 });
-

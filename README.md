@@ -17,9 +17,24 @@ Create a Sequelize migration script that checks if the database exists and creat
 ```bash
 npx sequelize-cli migration:generate --name create-database
 ```
-
+To run the migration
 ### Run Migrations
 Run the migrations to apply the changes to the database
 ```bash
 npx sequelize-cli db:migrate
 ```
+
+### Run Seed Tests
+
+To generate a seed, run the seed
+```bash
+npx sequelize-cli seed:generate --name demo-user  
+```
+Note the `demo-user` parameter is a name of the seed e.g demo-cart etc 
+
+As a result of using .env variables, default configuration i.e config.json isn't used.
+It needs to be specified as follows;
+```bash
+npx sequelize-cli db:seed:all --config ./config/config.js --env test 
+```
+add the `--debug` to debug the seeder
