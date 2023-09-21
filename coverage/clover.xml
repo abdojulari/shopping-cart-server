@@ -1,45 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1694635662186" clover="3.2.0">
-  <project timestamp="1694635662186" name="All files">
-    <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1" elements="24" coveredelements="22" complexity="0" loc="19" ncloc="19" packages="3" files="4" classes="4"/>
+<coverage generated="1695241122249" clover="3.2.0">
+  <project timestamp="1695241122249" name="All files">
+    <metrics statements="22" coveredstatements="17" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="2" elements="30" coveredelements="20" complexity="0" loc="22" ncloc="22" packages="4" files="4" classes="4"/>
     <package name="config">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="config.js" path="/Users/abdul/Desktop/backend/shopping-cart-server/config/config.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
       </file>
     </package>
     <package name="databases">
-      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <file name="database.ts" path="/Users/abdul/Desktop/backend/shopping-cart-server/databases/database.ts">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-      <file name="test-database.ts" path="/Users/abdul/Desktop/backend/shopping-cart-server/databases/test-database.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
       </file>
     </package>
     <package name="models.user">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="user.model.ts" path="/Users/abdul/Desktop/backend/shopping-cart-server/models/user/user.model.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="repositories.user-respository">
+      <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
+      <file name="userRepository.ts" path="/Users/abdul/Desktop/backend/shopping-cart-server/repositories/user-respository/userRepository.ts">
+        <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
       </file>
     </package>
   </project>
